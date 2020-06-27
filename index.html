@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Welcome to my Scientific Calculator</h1>
+    <div class="main">
+        <div class="in">
+            <input id="result" class="result" type="text" placeholder="0">
+        </div>
+        <div class="partb">
+            <div>
+                <button class="btn" onclick="calculate('log')">log</button>
+                <button class="btn" onclick="getnumber('(')">(</button>
+                <button class="btn" onclick="getnumber(')')">)</button>
+                <button class="btn" onclick="getnumber('%')">%</button>
+                <button class="btn" onclick="getclear()">C</button>
+                <button class="btn" onclick="getallclear()">AC</button>
+            </div>
+
+            <div>
+                <button class="btn" onclick="calculate('ln')">ln</button>
+                <button class="btn" onclick="calculate('s')">sin</button>
+                <button class="btn" onclick="getnumber('7')">7</button>
+                <button class="btn" onclick="getnumber('8')">8</button>
+                <button class="btn" onclick="getnumber('9')">9</button>
+                <button class="btn" onclick="getnumber('/')">÷</button>
+            </div>
+            <div>
+                <button class="btn" onclick="calculate('exp')">exp</button>
+                <button class="btn" onclick="calculate('c')">cos</button>
+                <button class="btn" onclick="getnumber('4')">4</button>
+                <button class="btn" onclick="getnumber('5')">5</button>
+                <button class="btn" onclick="getnumber('6')">6</button>
+                <button class="btn" onclick="getnumber('*')">x</button>
+            </div>
+            <div>
+                <button class="btn" onclick="calculate('sq')">x<sup>2</sup></button>
+                <button class="btn" onclick="calculate('t')">tan</button>
+                <button class="btn" onclick="getnumber('1')">1</button>
+                <button class="btn" onclick="getnumber('2')">2</button>
+                <button class="btn" onclick="getnumber('3')">3</button>
+                <button class="btn" onclick="getnumber('-')">-</button>
+            </div>
+            <div>
+                <button class="btn" onclick="calculate('√')">√</button>
+                <button class="btn" onclick="calculate('!')">x!</button>
+                <button class="btn" onclick="getnumber('0')">0</button>
+                <button class="btn" onclick="getnumber('.')">.</button>
+                <button class="btn" onclick="getresult()">=</button>
+                <button class="btn" onclick="getnumber('+')">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
